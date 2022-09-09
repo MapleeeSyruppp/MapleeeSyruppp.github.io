@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(185, 255, 212);
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    user-select: none;
+}
+.container{
+    display: block;
+    justify-content: center;
+    margin: 0 auto
+}
+.game-container{
+    display: block;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(92, 221, 125);
+    height: 600px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+    border: 5px solid rgb(50, 124, 68);
+}
+/* ----- NAV BAR ----- */
+.info-bar{
+    display: inline-flex;
+    flex-direction: row;
+    background-color: rgb(65, 161, 89);
+    margin-top: 15px;
+    height: 40px;
+    width: 750px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid rgb(50, 124, 68);
+}
+
+.info-bar h1{
+    margin: 0 auto;
+}
+
+/* ----- SCROLL BAR ----- */
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    margin-block-start: 61px;
+    border-radius: 10px;
+    background-color: rgb(65, 161, 89);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(50, 124, 68);
+    transition: 1s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(38, 97, 53);
+}
+::-webkit-scrollbar-thumb:active{
+    background-color: rgb(38, 97, 53);
+}
+
+
+/* ----- PLAY AREA ----- */
+
+.play-area{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 26px;
+    width: 94%;
+    height: 85%;
+}
+.play-area .counter{
+    font-size: 30px;
+}
+.play-area .col1{
+    width: 60%;
+}
+.play-area .col1 .clicker{
+    margin-top: 20px;
+    width: 75%;
+    transition: 0.1s;
+}
+.play-area .col1 .clicker:hover{
+    scale: 105%;
+}
+.play-area .col1 .clicker:active{
+    scale: 110%;
+}
+
+.play-area .col2{
+    border-radius: 10px;
+    background-color: rgb(65, 161, 89);
+    width: 40%;
+    overflow-y: auto;
+    border: 2px solid rgb(50, 124, 68);
+}
+.play-area .title{
+    text-align: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(65, 161, 89);
+}
+.play-area .title h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.play-area .upgrades{
+    margin-right: 10px;
+}
+.play-area .counter{
+    margin-bottom: 0;
+}
+.play-area .counter-per-second{
+    margin-top: 0;
+}
+
+/* UPGRADE */
+.upgrade-btn {
+    margin: 0 auto;
+    padding: 3px 0 3px 0;
+    background-color: rgb(50, 124, 68);
+    border-radius: 10px;
+    width: 95%;
+    margin-bottom: 10px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.upgrade-btn:hover {
+    scale: 95%;
+    background-color: rgb(38, 97, 53);
+}
+.upgrade-btn:active {
+    scale: 100%;
+}
+.upgrade-btn h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.upgrade-btn p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
